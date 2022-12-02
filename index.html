@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Paul Ashby // Developer</title>
+</head>
+
+<body class="text-white">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img class="mr-1" src="./images/icon-code.svg" alt="Developer icon"
+          title="Developer icon">
+        Paul Ashby</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto text-right mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#web">Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#games">Games</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+
+      <div class="jumbotron jumbotron-fluid  pb-0">
+
+        <div class="container pl-5 pr-5">
+
+          <div class="row">
+
+            <div class="col-12 col-lg-7  offset-lg-4 text-center text-lg-left">
+              <h1 class="display-4">Hi, I&rsquo;m Paul Ashby</h1>
+              <p class="lead">I&rsquo;m a designer and developer based in London. I&rsquo;m
+                continually honing my technical skills and love to take on a challenge! Maybe we can work together to
+                make
+                something amazing</p>
+            </div>
+
+            <div class="col-12 col-sm-6 offset-sm-3">
+              <img src="./images/paul.svg" alt="Paul Ashby avatar" title="Avatar">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </header>
+
+  <!-- Add some padding to bottom of main to allow for footer -->
+  <main class="container pl-5 pr-5">
+
+    <section id="work" class="row mb-5">
+
+      <div id="work-intro" class="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
+        <h2>Work</h2>
+        <p>This is a selection of projects I&rsquo;ve worked on as sole developer - both websites and HTML5 games. Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Earum eius sunt, fugit harum rem necessitatibus blanditiis
+        </p>
+      </div>
+
+      <div class="work-samples row">
+
+        <div class="col-xs-12 mt-3 mb-3">
+
+          <!-- Featured project at top -->
+          <div id="web" class="card h-100 ml-3 mr-3">
+            <div class="card-body d-flex flex-column">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <img class="img-fluid" src="./images/webpaperbird-bigger.gif" alt="Screenshot of Paperbird website"
+                    title="Paperbird website">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="card-title">Paperbird Publishing website</h3>
+                  <p class="card-text">Site built in PHP using the <a href="https://processwire.com/"
+                      target="blank">Processwire</a> content management system. I created a number of bespoke
+                    Processwire modules to allow the shop owner to easily manage content &amp; orders and to read
+                    messages submitted via the site contact
+                    form. The styles were written in SASS using the BEM methodology.</p>
+                  <p><strong>Role:</strong> Sole developer, designer</p>
+                  <!-- Wrapper class pushes button to bottom of card -->
+                  <div class="mt-auto">
+                    <a href="https://www.paperbirdpublishing.co.uk/" target="blank" class="btn btn-primary">Visit
+                      site</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-3 mb-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/webstmonday.jpg" alt="Screenshot of Saint Monday website"
+              title="StMonday website">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">StMonday golf wear website</h3>
+              <p class="card-text">Online shop for golf clothing start up. This is a WordPress site making use of the
+                WooCommerce PlugIn for sales functionality. GDPR-compliant analytics are provided by Matomo. The site is
+                running on a Virtual Private Server which I administer via SSH and a Plesk control panel.</p>
+              <p><strong>Role:</strong> Sole developer, server administrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://stmonday.xyz/" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-3 mb-3">
+          <div class="card h-100 mb-2">
+            <img class="card-img-top" src="./images/webotriviata.jpg" alt="Screenshot of Open Triviaa Database homepage"
+              title="Open Triviata Database website">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Open Triviata Database</h3>
+              <p class="card-text">I created an API serving questions sourced from <a href="https://opentdb.com/"
+                  target="blank">the Open Trivia Database</a> with the useful addition of ID numbers. This involved
+                writing a PHP program to synchronise the data an API that accepts the same queries as the original Open
+                TriviaAPI. The webpage makes use of the UIKit CSS framework.</p>
+              <p><strong>Role:</strong> Sole developer, designer</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://otriviata.com/" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
+          <div class="card h-100 mb-2">
+            <img class="card-img-top" src="./images/webprimitive.jpg" alt="Hot Larva game graphic"
+              title="Hot Larva game">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Primitive website</h3>
+              <p class="card-text">Website promoting my freelance design and development services. The site runs on the
+                <a href="https://processwire.com/" target="blank">Processwire</a> content management system. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta
+                impedit veniam obcaecati.</p>
+              <p><strong>Role:</strong> Sole developer, designer</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
+          <div id="games" class="card h-100 mb-2">
+            <img class="card-img-top" src="./images/gamesantygravity.jpeg" alt="Anty Gravity game graphic"
+              title="Anyty Gravity game">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Anty gravity HTML5 game</h3>
+              <p class="card-text">HTML5 game written making use of the <a href="https://phaser.io/"
+                  target="blank">Phaser</a> HTML5 game framework. The game began as a test of players&rsquo; timing and
+                gradually morphed into this antastic spacescape. The development of the game involved extensive
+                JavaScript programming.</p>
+
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/antygravity/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
+          <div class="card h-100 mb-2">
+            <img class="card-img-top" src="./images/gamesspotted.jpeg" alt="Spotted game graphic" title="Spotted game">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Spotted HTML5 game</h3>
+              <p class="card-text">Another <a href="https://phaser.io/" target="blank">Phaser</a> game continuing the
+                intergalactic insect theme. Once the bugs have been spotted, the challenging control mechanics make
+                capturing them difficult - especially with the extra pressure of their fearsome mutant phase.</p>
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/spotted/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
+          <div class="card h-100 mb-2">
+            <img class="card-img-top" src="./images/gameshotlarva.jpeg" alt="Hot Larva game graphic"
+              title="Hot Larva game">
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Hot Larva HTML5 game</h3>
+              <p class="card-text">A final <a href="https://phaser.io/" target="blank">Phaser</a> space bug game. This
+                one is a bit of a platformer, with hidden gems rewarding hazardous jumps onto the randomly-added ledges.
+              </p>
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/hotlarva/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="info" class="row">
+
+      <div id="info-intro" class="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
+        <h2>More info</h2>
+        <p>Here are some more details about my skills and history. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quibusdam voluptas consequatur temporibus eaque! Est accusantium eligendi voluptatum culpa totam?
+          Consequatur.</p>
+      </div>
+
+      <div class="info-entries row">
+
+        <div id="skills" class="col-md-3 mt-3 mb-3">
+          <h3>Skills</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item pl-0">HTML5</li>
+            <li class="list-group-item pl-0">CSS3</li>
+            <li class="list-group-item pl-0">Bootstrap</li>
+            <li class="list-group-item pl-0">UIKit</li>
+            <li class="list-group-item pl-0">JavaScript</li>
+            <li class="list-group-item pl-0">jQuery</li>
+            <li class="list-group-item pl-0">Node.js</li>
+            <li class="list-group-item pl-0">React</li>
+            <li class="list-group-item pl-0">PHP</li>
+            <li class="list-group-item pl-0">Python</li>
+          </ul>
+        </div>
+
+        <div id="about" class="col-md-8 offset-md-1 mt-3 mb-3">
+          <h3>About Me</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit eligendi impedit, cupiditate, quo
+            tempora non quidem aperiam repellat cum voluptatem optio excepturi. Consectetur ex, minima iusto tenetur
+            eaque harum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laudantium aspernatur quod magni a?
+            Quibusdam nobis exercitationem necessitatibus, quia, rem optio tempore reiciendis officia consequuntur
+            maiores, soluta cumque architecto voluptates.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus totam a vel recusandae. Magni numquam
+            nostrum nemo praesentium neque odio dolores autem sed facilis alias quod, dolorum unde, nam nobis?</p>
+
+          <h3>Contact</h3>
+          <p>Please get in touch via my <a href="#">Contact form</a></p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer font-small pt-4 pb-4 bg-dark">
+
+    <div class="footer-content container pl-5 pr-5 mt-3 mb-5">
+
+      <div class="row">
+
+        <div id="testimonials" class="order-md-2 col-md-7 offset-md-1 pl-0 pr-0 mt-3 mb-3">
+          <blockquote class="font-italic">
+            &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi. Soluta, natus error
+            quasi provident possimus suscipit in? Ea voluptate eligendi fuga debitis consectetur? Vero ipsum corporis
+            quod
+            nemo reiciendis.&rdquo;
+          </blockquote>
+          <p>J. Smith, Marketing Director, AcmeCo</p>
+        </div>
+
+        <div id="legal" class="col-md-3 pl-0 pr-0">
+          <ul class="pl-0">
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              All content &#169; Paul Ashby, 2022
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+:root {
+    --col-primary: #20484a;
+    --col-primary-dark: #1b383b;
+    --col-primary-muted: #4d8487;
+    --col-primary-mid: #2aa0a6;
+    --col-primary-light: #60cad0;
+    --col-primary-bright: #0ba6ac;
+    --col-primary-neon: #69f9ff;
+}
+
+body {
+    background-color: var(--col-primary);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--col-primary-mid);
+}
+
+a {
+    transition: all 0.5s ease-in-out;
+}
+
+a:not(.btn-primary) {
+    color: var(--col-primary-bright);
+}
+
+a:not(.btn-primary):hover {
+    color: var(--col-primary-neon);
+    text-decoration: none;
+}
+
+/* Glow on button hover */
+a.btn-primary:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(105, 249, 255, 0.72);
+    box-shadow: 0px 0px 10px 0px rgba(105, 249, 255, 0.72);
+}
+
+.navbar-brand img {
+    background-color: var(--col-primary-mid);
+    border-radius: 15px;
+    margin-top: -0.28rem;
+    width: 30px;
+}
+
+.avatar img {
+    border-radius: 120px;
+    border: solid 7px var(--col-primary-mid);
+    height: 240px;
+    width: 240px;
+}
+
+.jumbotron {
+    background-color: var(--col-primary-bright);
+}
+
+#work-intro,
+#info-intro {
+    color: var(--col-primary-light);
+}
+
+.card {
+    border-color: var(--col-primary-muted);
+}
+
+.card .btn-primary {
+    background-color: var(--col-primary-mid);
+    border-color: var(--col-primary-mid);
+}
+
+.card .btn-primary:hover {
+    background-color: var(--col-primary-light);
+    border-color: var(--col-primary-light);
+}
+
+.card-body {
+    background-color: var(--col-primary-dark);
+}
+
+#skills li {
+    background-color: transparent;
+    border-color: var(--col-primary-mid);
+}
+
+.page-footer ul {
+    list-style: none;
+}
+
+.page-footer li {
+    padding: 0.5rem 0;
+}
+
+#legal {
+    font-size: 0.7rem;
+}
+
+#testimonials blockquote {
+    color: var(--col-primary-mid);
+    font-size: 1.3rem;
+    /* Align with adjacent column */
+    margin-top: -1.2rem;
+}
